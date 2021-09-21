@@ -30,6 +30,12 @@ public class Lab_2_Main {
         System.out.println("Please enter the size of the array: ");
         int size = input.nextInt();//this will get the determine the size of the array based on user input
         
+        while(size < 2){//used to validate the constraint 
+            System.out.println("Please enter an array size bigger than 2");
+            size = input.nextInt();
+        }
+        
+        
         int[] pairwiseArr = new int[size];//declare and initialize the array with the size taken from the user
         
         
